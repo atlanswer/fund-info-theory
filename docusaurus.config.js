@@ -23,14 +23,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/atlanswer/fund-info-theory",
+          editUrl: "https://github.com/atlanswer/fund-info-theory/edit/main",
           remarkPlugins: [],
           rehypePlugins: [],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/atlanswer/fund-info-theory",
+          editUrl: "https://github.com/atlanswer/fund-info-theory/edit/main",
           remarkPlugins: [],
           rehypePlugins: [],
         },
@@ -48,6 +48,16 @@ const config = {
       integrity: "sha256-TThEtR+XalhWKkfF383YLOrI50NGNeIqrzS+q08afrY=",
       crossorigin: "anonymous",
     },
+  ],
+
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        indexPages: true,
+        hashed: true,
+      },
+    ],
   ],
 
   themeConfig:
@@ -70,6 +80,10 @@ const config = {
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            type: "search",
             position: "right",
           },
         ],
