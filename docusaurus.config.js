@@ -6,7 +6,7 @@ const TITLE = "Fundamentals of Information Theory";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: TITLE,
-  tagline: "Dinosaurs are cool",
+  tagline: "BER goes brrr",
   url: "https://it.waferlab.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -64,6 +64,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       navbar: {
         title: TITLE,
         logo: {
@@ -73,9 +79,9 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "notes",
             position: "left",
-            label: "Tutorial",
+            label: "Notes",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -97,24 +103,20 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/docs/notes",
+              },
+              {
+                label: "Blog",
+                to: "/blog",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Resources",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "Courseware",
+                href: "http://www.chencode.cn/teaching.html",
               },
             ],
           },
@@ -122,12 +124,8 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/atlanswer/fund-info-theory",
               },
             ],
           },
