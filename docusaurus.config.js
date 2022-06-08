@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const TITLE = "Fundamentals of Information Theory";
+const GH_URL = "https://github.com/atlanswer/fund-info-theory";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,14 +24,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/atlanswer/fund-info-theory/edit/main",
+          editUrl: `${GH_URL}/edit/main`,
           remarkPlugins: [],
           rehypePlugins: [],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/atlanswer/fund-info-theory/edit/main",
+          editUrl: `${GH_URL}/edit/main`,
           remarkPlugins: [],
           rehypePlugins: [],
         },
@@ -43,10 +44,10 @@ const config = {
 
   stylesheets: [
     {
-      href: "https://unpkg.com/katex@0.15.6/dist/katex.min.css",
+      href: "https://unpkg.com/katex@0.16.0/dist/katex.min.css",
       type: "text/css",
       integrity:
-        "sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs",
+        "sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC",
       crossorigin: "anonymous",
     },
   ],
