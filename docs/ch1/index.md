@@ -200,7 +200,27 @@ Corollary:
 
 ### Convex Function
 
+A function $f(x)$ is convex over the interval $(a,b)$ if $\forall x_1,x_2 \in (a,b)$ and $0 \leq \lambda \leq 1$,
+
+$$
+\begin{equation}
+f(\lambda x_1+(1-\lambda)x_2) \leq \lambda f(x_1)+(1-\lambda)f(x_2)\text{.}
+\end{equation}
+$$
+
+It is strictly convex if the equality holds when $\lambda = 0$ or $\lambda = 1$.
+
+- If $f(x)$ is convex, $-f(x)$ is concave
+
 ### Jensen's Inequality
+
+If function $f(x)$ id convex, then
+
+$$
+\begin{equation}
+f(\mathbb{E}[x])\leq\mathbb{E}[f(x)]
+\end{equation}
+$$
 
 ### Fano's Inequality
 
