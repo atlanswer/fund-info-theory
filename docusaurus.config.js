@@ -79,14 +79,20 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "ch1/ch1",
+            type: "docSidebar",
+            label: "Course",
+            sidebarId: "courseSidebar",
             position: "left",
-            label: "Notes",
+          },
+          {
+            type: "docSidebar",
+            label: "Assignment",
+            sidebarId: "assignmentSidebar",
+            position: "left",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: GH_URL,
             label: "GitHub",
             position: "right",
           },
@@ -103,8 +109,12 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Notes",
-                to: "/docs/ch1",
+                label: "Course",
+                to: "/docs/course/ch1",
+              },
+              {
+                label: "Assignment",
+                to: "/docs/assignment/ch1",
               },
               {
                 label: "Blog",

@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/ch1"
+            to="/docs/course/ch1"
           >
             Open Courseware
           </Link>
